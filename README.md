@@ -33,18 +33,6 @@ git clone https://github.com/YunusOyunda-48/Shadow-Connections-Viewer.git
 cd Shadow-Connections-Viewer
 ```
 
-Run the local GUI:
-
-```powershell
-npm run gui
-```
-
-Run the CLI:
-
-```bash
-node .\src\index.js
-```
-
 ## GUI
 
 The GUI is intentionally simple:
