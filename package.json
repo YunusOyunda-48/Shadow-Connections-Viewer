@@ -1,0 +1,28 @@
+{
+  "name": "shadow-connections-viewer",
+  "version": "0.1.0",
+  "description": "Windows CLI for inspecting active network connections, owning processes, and basic risk signals.",
+  "type": "module",
+  "bin": {
+    "shadow-connections-viewer": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "gui": "powershell -ExecutionPolicy Bypass -File .\\gui.ps1",
+    "scan": "node ./src/index.js"
+  },
+  "keywords": [
+    "security",
+    "network",
+    "forensics",
+    "windows",
+    "cybersecurity",
+    "cli",
+    "gui"
+  ],
+  "author": "Yunus",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
