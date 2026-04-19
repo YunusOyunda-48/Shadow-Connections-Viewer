@@ -24,17 +24,23 @@ The goal is practical visibility, not malware verdicts. It is meant to be useful
 
 ## Quick Start
 
-Download the project from GitHub Releases if you want the ready-to-use version.
-
-Release downloads are expected to include:
-
-- `Shadow-Connections-Viewer.exe`
-
-Clone the repository if you want the source code:
+Clone the repository:
 
 ```bash
 git clone https://github.com/YunusOyunda-48/Shadow-Connections-Viewer.git
 cd Shadow-Connections-Viewer
+```
+
+Run the local GUI:
+
+```powershell
+npm run gui
+```
+
+Run the CLI:
+
+```bash
+node .\src\index.js
 ```
 
 ## GUI
@@ -64,12 +70,11 @@ node .\src\index.js --resolve
 node .\src\index.js --all
 ```
 
-## Release Direction
+## Usage Model
 
-- GitHub Releases for downloadable Windows builds
-- Releases can ship a ready-to-run `Shadow-Connections-Viewer.exe`
-- Local clone support for developers
-- CLI kept for lightweight usage
+- People who want a local interface can run `npm run gui`
+- People who want source access can clone the repo
+- People who prefer terminal usage can run the CLI directly
 
 Repository:
 
@@ -77,7 +82,6 @@ Repository:
 
 ## Roadmap
 
-- Packaged Windows `.exe` release
 - Better risk heuristics
 - GeoIP / ASN enrichment
 - Historical comparison improvements
@@ -91,10 +95,9 @@ Use this tool only on systems you own or are explicitly authorized to inspect.
 
 Bu proje, bilgisayarda hangi uygulamanın internete bağlandığını görmeye yarayan yerel bir Windows aracıdır.
 
-- İsteyen GitHub Releases üzerinden indirip kullanabilir
-- İsteyen şu repo linkiyle clone edebilir:
-  `https://github.com/YunusOyunda-48/Shadow-Connections-Viewer.git`
 - `npm run gui` ile arayüz açılır
 - `node .\src\index.js` ile terminalden çalışır
+- Repo klonlamak için:
+  `https://github.com/YunusOyunda-48/Shadow-Connections-Viewer.git`
 - Uygulama adı, bağlandığı IP/port ve dikkat çeken nedenleri gösterir
 - Sonuçları JSON olarak dışa aktarabilir
