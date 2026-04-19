@@ -26,6 +26,10 @@ The goal is practical visibility, not malware verdicts. It is meant to be useful
 
 Download the project from GitHub Releases if you want the ready-to-use version.
 
+Release downloads are expected to include:
+
+- `Shadow-Connections-Viewer.exe`
+
 Clone the repository if you want the source code:
 
 ```bash
@@ -63,6 +67,7 @@ node .\src\index.js --all
 ## Release Direction
 
 - GitHub Releases for downloadable Windows builds
+- Releases can ship a ready-to-run `Shadow-Connections-Viewer.exe`
 - Local clone support for developers
 - CLI kept for lightweight usage
 

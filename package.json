@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node ./src/index.js",
     "gui": "powershell -ExecutionPolicy Bypass -File .\\gui.ps1",
+    "build:exe": "powershell -ExecutionPolicy Bypass -File .\\build-release.ps1",
     "scan": "node ./src/index.js"
   },
   "keywords": [
